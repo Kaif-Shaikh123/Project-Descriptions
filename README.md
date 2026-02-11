@@ -47,14 +47,14 @@ vi. Power BI Integration
 **5.Repository Structure**
     -azure-medallion-data-engineering/
  
-├── 01_shared_utils/     # ADLS auth, shared libraries
-├── 02_raw_layer/        # Ingestion from ADLS to RAW Delta
-├── 03_bronze_layer/     # RAW to Bronze schema loading
-├── 04_silver_layer/     # Transformations & Data Modeling
-├── 05_data_quality/     # Validation and quality checks
-├── 06_powerbi/          # Power BI dashboard file
-├── screenshots/         # Evidence of workflows, schemas, DevOps
-└── README.md
+ 01_shared_utils/     # ADLS auth, shared libraries
+ 02_raw_layer/        # Ingestion from ADLS to RAW Delta
+ 03_bronze_layer/     # RAW to Bronze schema loading
+ 04_silver_layer/     # Transformations & Data Modeling
+ 05_data_quality/     # Validation and quality checks
+ 06_powerbi/          # Power BI dashboard file
+ screenshots/         # Evidence of workflows, schemas, DevOps
+ README.md
 
 **6.Data Modeling (SILVER Layer)**
   -The SILVER layer contains analytics-ready tables such as:
