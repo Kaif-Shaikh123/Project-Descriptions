@@ -7,23 +7,12 @@
 
 **2.Architecture**
   -Medallion Flow:
-     Azure Data Lake (Domain Data)
-          ↓
-       RAW Layer (Delta)
-          ↓
-     BRONZE Schema (Databricks)
-          ↓
-     SILVER Schema (Databricks)
-          ↓
-    Power BI Dashboards
+     Azure Data Lake (Domain Data) ⟶ RAW Layer (Delta) ⟶ BRONZE Schema (Databricks) ⟶ SILVER Schema (Databricks) ⟶ Power BI Dashboards
+      
 
 **3.Business Domains**
   -Data is organized by real enterprise domains:
-
-1.Purchase
-2.Sales
-3.HR
-4.Others
+          1.Purchase   2.Sales    3.HR   4.Others
 Each domain contains multiple entities (tables) processed independently through the medallion layers.
 
 **4.Key Implementations:-**
